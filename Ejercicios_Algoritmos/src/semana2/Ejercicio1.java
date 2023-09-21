@@ -13,31 +13,24 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
+        // Obtener el área de un rectángulo.
         Scanner entradaT = new Scanner(System.in);
         
-        float c, f, k;
-        int opc;
+        //variables
+        int lado1, lado2, area;
         
-        System.out.print("Ingresa la temperatura en °C: ");
-        c = entradaT.nextFloat();
+        //leer
+        System.out.print("Ingresa el primer lado: ");
+        lado1 = entradaT.nextInt();
         
-        System.out.println("Ingresa el número del tipo de conversión deseada: \n"
-                + "1.- Kelvin\n"
-                + "2.- Fahrenheit");
-        opc = entradaT.nextInt();
+        System.out.print("Ingresa el segundo lado: ");
+        lado2 = entradaT.nextInt();
         
-        if (opc == 1) {
-            k = c + 273.15f;
-            System.out.println("La temperatura en °K es: " + k);
-        }else{
-            if(opc == 2){
-                f = (9 * c) / 5 + 32;
-                System.out.println("La temperatura en °F es: " + f);
-                
-            }else{
-                System.out.println("Opción incorrecta"); 
-            }
-        }
+        //proceso
+        area = lado1 * lado2;
+        
+        //escribir
+        System.out.println("El área del rectángulo es: " + area);
     }
     
 }
