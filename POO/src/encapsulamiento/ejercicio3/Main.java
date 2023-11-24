@@ -1,7 +1,6 @@
 package encapsulamiento.ejercicio3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
